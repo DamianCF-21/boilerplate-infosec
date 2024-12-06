@@ -1,5 +1,30 @@
 const express = require('express');
 const app = express();
+import React from 'react';
+import './App.css';
+
+// Importa Helmet
+import { Helmet } from 'react-helmet';
+
+function App() {
+  return (
+    <div className="App">
+      {/* Usa Helmet para configurar el título de la página */}
+      <Helmet>
+        <title>Mi Aplicación React</title>
+        <meta name="description" content="Descripción de mi aplicación" />
+        {/* Puedes agregar más metadatos o configuraciones aquí */}
+      </Helmet>
+
+      {/* El contenido de tu aplicación */}
+      <h1>Bienvenidos a mi aplicación React</h1>
+      {/* Aquí puedes agregar más componentes */}
+    </div>
+  );
+}
+
+export default App;
+
 
 
 
